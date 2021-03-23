@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" ignored="0" total="4" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="search-module" duration-ms="79230" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:09:51Z">
+    <groups>
+    </groups>
+    <test name="search-test-java" duration-ms="32403" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:09:04Z">
+      <class name="searchmodule.tests.SearchTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:searchmodule.tests.SearchTest@23223dd8]" name="setupDriver" is-config="true" duration-ms="3330" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:08:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@6fb554cc]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:searchmodule.tests.SearchTest@23223dd8]" name="search" duration-ms="28891" started-at="2021-01-05T02:08:35Z" finished-at="2021-01-05T02:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[java]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:searchmodule.tests.SearchTest@23223dd8]" name="quitDriver" is-config="true" duration-ms="179" started-at="2021-01-05T02:09:04Z" finished-at="2021-01-05T02:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:searchmodule.tests.SearchTest@23223dd8]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-01-05T02:09:04Z" depends-on-methods="searchmodule.tests.SearchTest.quitDriver" finished-at="2021-01-05T02:09:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- searchmodule.tests.SearchTest -->
+    </test> <!-- search-test-java -->
+    <test name="search-test-kubernetes" duration-ms="32522" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:09:05Z">
+      <class name="searchmodule.tests.SearchTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:searchmodule.tests.SearchTest@43a25848]" name="setupDriver" is-config="true" duration-ms="3308" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:08:35Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@4cb2c100]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:searchmodule.tests.SearchTest@43a25848]" name="search" duration-ms="29106" started-at="2021-01-05T02:08:35Z" finished-at="2021-01-05T02:09:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[kubernetes]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:searchmodule.tests.SearchTest@43a25848]" name="quitDriver" is-config="true" duration-ms="95" started-at="2021-01-05T02:09:04Z" finished-at="2021-01-05T02:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:searchmodule.tests.SearchTest@43a25848]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-01-05T02:09:05Z" depends-on-methods="searchmodule.tests.SearchTest.quitDriver" finished-at="2021-01-05T02:09:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- searchmodule.tests.SearchTest -->
+    </test> <!-- search-test-kubernetes -->
+    <test name="search-test-docker" duration-ms="71180" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:09:43Z">
+      <class name="searchmodule.tests.SearchTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:searchmodule.tests.SearchTest@27f674d]" name="setupDriver" is-config="true" duration-ms="9717" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:08:42Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@3f2a3a5]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="FAIL" signature="search(java.lang.String)[pri:0, instance:searchmodule.tests.SearchTest@27f674d]" name="search" duration-ms="61389" started-at="2021-01-05T02:08:42Z" finished-at="2021-01-05T02:09:43Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[docker]]>
+              </value>
+            </param>
+          </params>
+          <exception class="org.openqa.selenium.TimeoutException">
+            <message>
+              <![CDATA[Expected condition failed: waiting for number to be more than "0". Current number: "0" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NSHIBAHA-MOBL', ip: '172.17.253.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /tmp/.com.google.Chrome.ea8ARc}, goog:chromeOptions: {debuggerAddress: localhost:35163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c9dfacab59827494784427a91bb...}
+Session ID: c9dfacab59827494784427a91bb6087c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.TimeoutException: Expected condition failed: waiting for number to be more than "0". Current number: "0" (tried for 30 second(s) with 500 milliseconds interval)
+Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
+System info: host: 'NSHIBAHA-MOBL', ip: '172.17.253.145', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_252'
+Driver info: org.openqa.selenium.remote.RemoteWebDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 87.0.4280.66, chrome: {chromedriverVersion: 87.0.4280.20 (c99e81631faa0..., userDataDir: /tmp/.com.google.Chrome.ea8ARc}, goog:chromeOptions: {debuggerAddress: localhost:35163}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:virtualAuthenticators: true, webdriver.remote.sessionid: c9dfacab59827494784427a91bb...}
+Session ID: c9dfacab59827494784427a91bb6087c
+at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:113)
+at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
+at searchmodules.pages.SearchPage.getResult(SearchPage.java:61)
+at searchmodule.tests.SearchTest.search(SearchTest.java:32)
+at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.lang.reflect.Method.invoke(Method.java:498)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.access$000(SuiteRunner.java:40)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:489)
+at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
+at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.TimeoutException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:searchmodule.tests.SearchTest@27f674d]" name="quitDriver" is-config="true" duration-ms="72" started-at="2021-01-05T02:09:43Z" finished-at="2021-01-05T02:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:searchmodule.tests.SearchTest@27f674d]" name="quitBrowser" is-config="true" duration-ms="0" started-at="2021-01-05T02:09:43Z" depends-on-methods="searchmodule.tests.SearchTest.quitDriver" finished-at="2021-01-05T02:09:43Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- searchmodule.tests.SearchTest -->
+    </test> <!-- search-test-docker -->
+    <test name="search-test-webdriver" duration-ms="79230" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:09:51Z">
+      <class name="searchmodule.tests.SearchTest">
+        <test-method status="PASS" signature="setupDriver(org.testng.ITestContext)[pri:0, instance:searchmodule.tests.SearchTest@6bdf28bb]" name="setupDriver" is-config="true" duration-ms="7500" started-at="2021-01-05T02:08:32Z" finished-at="2021-01-05T02:08:40Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@614c5515]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setupDriver -->
+        <test-method status="PASS" signature="search(java.lang.String)[pri:0, instance:searchmodule.tests.SearchTest@6bdf28bb]" name="search" duration-ms="71622" started-at="2021-01-05T02:08:40Z" finished-at="2021-01-05T02:09:51Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[webdriver]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- search -->
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:searchmodule.tests.SearchTest@6bdf28bb]" name="quitDriver" is-config="true" duration-ms="103" started-at="2021-01-05T02:09:51Z" finished-at="2021-01-05T02:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitDriver -->
+        <test-method status="PASS" signature="quitBrowser()[pri:0, instance:searchmodule.tests.SearchTest@6bdf28bb]" name="quitBrowser" is-config="true" duration-ms="1" started-at="2021-01-05T02:09:51Z" depends-on-methods="searchmodule.tests.SearchTest.quitDriver" finished-at="2021-01-05T02:09:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quitBrowser -->
+      </class> <!-- searchmodule.tests.SearchTest -->
+    </test> <!-- search-test-webdriver -->
+  </suite> <!-- search-module -->
+</testng-results>

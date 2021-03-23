@@ -1,0 +1,6 @@
+com\flightapp\pages\FlightConfirmationPage.class
+searchmodules\pages\SearchPage.class
+com\flightapp\pages\FindFlightPage.class
+com\flightapp\pages\FlightDetailsPage.class
+com\flightapp\pages\RegistrationConfirmationPage.class
+com\flightapp\pages\RegistrationPage.class
